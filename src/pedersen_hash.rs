@@ -1,7 +1,7 @@
+#[cfg(target_arch = "x86_64")]
+use bellperson::bls::Bls12;
 use fff::{Field, PrimeField, PrimeFieldRepr};
 use lazy_static::lazy_static;
-#[cfg(target_arch = "x86_64")]
-use paired::bls12_381::Bls12;
 
 use crate::jubjub::*;
 
@@ -233,7 +233,7 @@ where
 #[cfg(test)]
 mod test {
     use super::*;
-    use paired::bls12_381::Bls12;
+    use bellperson::bls::Bls12;
     use rand::{Rng, SeedableRng};
     use rand_xorshift::XorShiftRng;
 

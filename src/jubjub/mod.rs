@@ -17,15 +17,13 @@
 //! the Montgomery curve forms a group isomorphism, allowing points
 //! to be freely converted between the two forms.
 
-use paired::Engine;
-
 use fff::{Field, PrimeField, SqrtField};
 
 use crate::group_hash::group_hash;
 
 use crate::constants;
 
-use paired::bls12_381::{Bls12, Fr};
+use bellperson::bls::{Bls12, Engine, Fr};
 
 /// This is an implementation of the twisted Edwards Jubjub curve.
 pub mod edwards;

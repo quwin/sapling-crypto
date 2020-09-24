@@ -1,4 +1,4 @@
-use paired::Engine;
+use bellperson::bls::Engine;
 
 use fff::Field;
 
@@ -664,12 +664,12 @@ mod test {
     use super::{fixed_base_multiplication, EdwardsPoint, MontgomeryPoint};
     use crate::jubjub::fs::Fs;
     use crate::jubjub::{edwards, montgomery, FixedGenerators, JubjubBls12, JubjubParams};
+    use bellperson::bls::{Bls12, Fr};
     use bellperson::gadgets::boolean::{AllocatedBit, Boolean};
     use bellperson::gadgets::num::AllocatedNum;
     use bellperson::gadgets::test::*;
     use bellperson::ConstraintSystem;
     use fff::{BitIterator, Field, PrimeField};
-    use paired::bls12_381::{Bls12, Fr};
     use rand::Rng;
     use rand_core::SeedableRng;
     use rand_xorshift::XorShiftRng;

@@ -208,7 +208,7 @@ pub fn batch_verify<'a, E: JubjubEngine, R: RngCore>(
 
 #[cfg(test)]
 mod tests {
-    use paired::bls12_381::Bls12;
+    use bellperson::bls::Bls12;
     use rand::thread_rng;
 
     use crate::jubjub::{edwards, fs::Fs, JubjubBls12};

@@ -111,12 +111,12 @@ where
 #[cfg(test)]
 mod test {
     use super::*;
+    use bellperson::bls::{Bls12, Fr};
     use bellperson::gadgets::{
         boolean::{AllocatedBit, Boolean},
         test::*,
     };
     use fff::PrimeField;
-    use paired::bls12_381::{Bls12, Fr};
     use rand::Rng;
     use rand_core::SeedableRng;
     use rand_xorshift::XorShiftRng;
