@@ -16,14 +16,14 @@ rand = "0.7"
 byteorder = "1"
 fff = { version = "0.2.1", features = ["derive"] }
 paired =  { version = "0.20.0", features = ["expose-arith"] }
-bellperson = "0.9.0"
+bellperson = "0.10.0"
 blake2b_simd = "0.5"
 blake2s_simd = "0.5"
 lazy_static = "1.4.0"
 
 [dev-dependencies]
-digest = "0.8.1"
-hex-literal = "0.2"
+digest = "0.9.0"
+hex-literal = "0.3"
 rust-crypto = "0.2"
 rand_xorshift = "0.2.0"
 
