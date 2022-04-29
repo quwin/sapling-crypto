@@ -14,7 +14,7 @@ edition = "2018"
 byteorder = "1"
 fff = { version = "0.2.1", features = ["derive"] }
 paired =  { version = "0.20.0", features = ["expose-arith"] }
-bellperson = "0.10.0"
+bellperson = "0.20.0"
 blake2b_simd = "0.5"
 blake2s_simd = "0.5"
 lazy_static = "1.4.0"
