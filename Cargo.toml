@@ -14,7 +14,6 @@ edition = "2018"
 byteorder = "1"
 fff = { version = "0.2.1", features = ["derive"] }
 paired =  { version = "0.20.0", features = ["expose-arith"] }
-bellperson = "0.20.0"
 blake2b_simd = "0.5"
 blake2s_simd = "0.5"
 lazy_static = "1.4.0"
@@ -23,7 +22,6 @@ lazy_static = "1.4.0"
 digest = "0.9.0"
 hex-literal = "0.3"
 rust-crypto = "0.2"
-rand_xorshift = "0.2.0"
 
 [target.'cfg(target_arch = "x86_64")'.build-dependencies]
 cc = "1.0"
